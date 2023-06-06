@@ -1,0 +1,287 @@
+/* Name: Bluetooth.js
+   Author: Amay Kataria. 
+   Date: 04/26/2021
+   Description: Styles for the entire visual debugger page. */
+
+/* Add all common style variables in here to be reused. */
+:root {
+    --deepPurple: #543859;
+    --darkPink: #C80EE8;
+    --dryPink: #F3ADFF;
+    --fadedPink: #966E9C;
+    --textColor: #ffffff;
+    --inactive: #ff0000;
+    --active: #5eff00;
+    --bgColor: #000000;
+    --segoeText: "Segoe UI";
+    --verySmall: 4px;
+    --lessSmall: 8px;
+    --small: 12px;
+    --lessBig: 16px; 
+    --big: 20px;
+    --veryBig: 24px; 
+    --extraBig: 28px;
+    --lessHuge: 32px;
+    --huge: 36px;
+    --veryHuge: 40px;
+    --lessMassive: 44px;
+    --massive: 48px;
+    --veryMassive: 52px;
+    --extraMassive: 72px;
+    --blockHeight: 650px; 
+    --sliderHeight: 96px
+}
+  
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgColor);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--segoeText);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Navbar styles.  */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkPink);
+    color: var(--textColor);
+    font-size: var(--big);
+    height: var(--veryMassive);
+}
+.title {
+    padding-left: var(--veryBig);
+}
+#datetime {
+    padding-right: var(--veryBig);
+}
+
+/* Bluetooth connect button styles. */
+#bleconnect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--big);
+    padding-right: var(--big);
+    margin-top: var(--big);
+}
+.button {
+    background-color: var(--dryPink);
+    padding: var(--lessSmall);
+    margin-right: var(--big);
+    border: none;
+    border-radius: var(--lessSmall);
+    color: var(--textColor);
+    font-family: var(--segoeText);
+    font-size: var(--lessBig);
+}
+.button:hover {background-color: var(--deepPurple)}
+.button:active {
+  background-color: var(--fadedPink);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.indicator {
+    width: var(--extraBig);
+    height: var(--extraBig);
+    background-color: var(--inactive);
+    border-radius: var(--big);
+}
+.indicator-active {
+    background-color: var(--active) !important;
+}
+
+/* Chipset values container styles. */
+#chipset-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--textColor);
+    background-color: var(--fadedPink);
+    width: 100%;
+    height: var(--blockHeight);
+    margin-top: var(--small);
+}
+.chipset-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: var(--big);
+    padding-right: var(--big);
+    padding-left: var(--extraSmall);
+}
+.chipset-title {
+    font-size: var(--veryBig);
+    margin-right: var(--veryBig);
+}
+
+/* Chipset table container styles. */
+.chipset-table-container {
+   display: flex;
+   flex-direction: column;
+   margin-top: var(--huge);
+}
+.chipset-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.table-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--verySmall);
+    margin-bottom: var(--extraBig);
+    padding: var(--verySmall);
+    background-color: var(--dryPink);
+    width: var(--huge);
+    border-radius: var(--verySmall);
+}
+.table-title {
+    background-color: var(--deepPurple);
+    font-size: var(--small);
+    width: var(--massive);
+    height: var(--big);
+}
+.table-indicator {
+    margin: var(--verySmall);
+    padding: var(--verySmall);
+    background-color: var(--inactive);
+    border-radius: var(--huge);
+    width: var(--huge);
+    height: var(--huge);
+}
+
+/* Cutoff slider styles.  */
+.slider-cell {
+    display: flex;
+    justify-content: center;
+    margin: var(--verySmall);
+    margin-top: var(--extraBig);
+    margin-bottom: var(--veryHuge);
+    padding: var(--verySmall);
+    width: var(--huge);
+    height: var(--huge);
+}
+.slider {
+    -webkit-appearance: none;
+    width: var(--sliderHeight);
+    height: var(--big);
+    background: var(--dryPink);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    transform: rotate(-90deg);
+} 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: var(--small);
+    height: var(--small);
+    background: var(--deepPurple);
+    cursor: pointer;
+}
+/* Cutoff value text input styles */
+.input-val {
+    border: none;
+    width: var(--huge);
+    height: var(--veryBig);
+    background-color: var(--lightPink);
+    color: var(--textColor);
+    font-size: var(--lessBig);
+    text-align: center;
+}
+
+.adsr-layout {
+    display: flex;
+    flex-direction: column;
+    height: 44px;
+}
+/* Rotary knobs */
+.knob-collection {
+    display: flex;
+    flex-direction: column;
+    width: var(--veryMassive);
+    margin-bottom: var(--small);
+    height: 110px;
+    align-items: center;
+}
+
+.knob-row {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important; 
+    height: 100% !important;
+    margin-bottom: var(--verySmall);
+}
+
+.rotary-knob {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.knob-val {
+    margin-top: var(--verySmall);
+    padding: var(--verySmall);
+    background-color: var(--dryPink);
+    width: var(--huge);
+    border-radius: var(--verySmall);
+    text-align: center;
+}
+
+/* Unused sensor styles*/
+.unused-sensor {
+    background-color: var(--deepPurple) !important; 
+}
+
+/* Disable sensor*/
+.disabled-sensor {
+    background-color: var(--inactive) !important;
+}
+
+/* Chipset interactive buttons / interface styles.  */
+.chipset-control-group {
+    display: flex;
+    flex-direction: row;
+}
+.horizontal-slider {
+    transform: rotate(0deg);
+}
+.chipsetInput {
+    background-color: var(--dryPink);
+    margin-left: var(--small);
+    border-radius: var(--verySmall);
+    margin-right: var(--small);
+}
+.slider-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-title {
+    font-size: var(--small);
+}
+.b-send {
+    margin-left: var(--lessSmall);
+}
+/* JSON Controls. */
+#jsoncontrols {
+    padding-left: var(--big);
+    margin-top: var(--small);
+    margin-bottom: var(--small);
+}
+#file-input {
+    display: none;
+}
