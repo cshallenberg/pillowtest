@@ -9,7 +9,7 @@ let dateTime; // Datetime node in the tree.
 let audio; // Audio handler. 
 let json; // JSON handler. 
 let j_json; 
-const numChipsets = 3; 
+const numChipsets = 1; 
 const datetimeID = "#datetime";
 
 // Preload all audio files. 
