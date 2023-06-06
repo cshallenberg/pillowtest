@@ -19,31 +19,7 @@ const sounds = {
     10: 'Grunewald.mp3',
     11: 'twinkle.mp3',
     12: 'newdrum1.mp3',
-    13: 'EWbirds.mp3',
-    14: 'Grunewald.mp3',
-    15: 'breathing.mp3',  
-    16: 'cicadas.mp3',
-    17: 'newdrum1.mp3',
-    18: 'playing2.mp3',
-    19: 'quietstring.mp3',
-    20: 'song.mp3',
-    21: 'drone4.mp3',
-    22: 'twinkle.mp3',
-    23: 'cicadas.mp3',
-    24: 'churchbells.mp3',
-    25: 'playing2.mp3',
-    26: 'cheer.mp3',
-    27: 'restaurant.mp3',  
-    28: 'fire.mp3',
-    29: 'door.mp3',
-    //change the below
-    30: 'twinkle.mp3',
-    31: 'quietstring.mp3',
-    32: 'body2B.mp3',
-    33: 'Grunewald.mp3',
-    34: 'fire.mp3',
-    35: 'drone4.mp3',
-    36: 'churchbells.mp3'
+  
 }; 
 
 // Directory of the sound files. 
