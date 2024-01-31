@@ -9,10 +9,10 @@ const maxTime = 20;
 const step = 0.1; 
 const defaultAttackLevel = 0.7;
 const defaultAttackTime = 3;
-const defaultDecayLevel = 0.7;
+const defaultDecayLevel = 0.5;
 const defaultDecayTime = 0.5;
 const defaultReleaseLevel = 0.0;
-const defaultReleaseTime = 2;
+const defaultReleaseTime = 3;
 
 class ADSR {
     constructor(knobCollection, isSensorUnused) {
