@@ -8,9 +8,9 @@ const maxLevel = 10;
 const maxTime = 20; 
 const step = 0.1; 
 const defaultAttackLevel = 0.7;
-const defaultAttackTime = 3;
+const defaultAttackTime = 1;
 const defaultDecayLevel = 0.5;
-const defaultDecayTime = 0.5;
+const defaultDecayTime = 1;
 const defaultReleaseLevel = 0.0;
 const defaultReleaseTime = 3;
 
