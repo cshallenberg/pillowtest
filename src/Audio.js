@@ -8,16 +8,16 @@
 // List of all the filenames for the sensor lines. 
 const sounds = {
     1: 'forestEQ.mp3',
-    2: 'Peter_bird.mp3',
-    3: 'nightingale1EQ.mp3',
-    4: 'children.mp3',
-    5: 'lowpiano.mp3',
-    6: 'melodic violin.mp3',
-    7: 'morning guitar mix.mp3',
+    2: 'nightingale1EQ.mp3',
+    3: 'children.mp3',
+    4: 'lowpiano.mp3',
+    5: 'melodic violin.mp3',
+    6: 'morning guitar mix.mp3',
+    7: 'shimmer violin 2.mp3',
     8: 'shimmer violin.mp3',
-    9: 'shimmer violin 2.mp3',
+    9: 'shimmer violin.mp3', 
     10: 'churchbellsnew.mp3',
-    11: 'nightingale2.mp3',
+    11: 'Peter_bird.mp3',
     12: 'forestEQ.mp3',
   
 }; 
