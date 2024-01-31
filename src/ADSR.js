@@ -12,7 +12,7 @@ const defaultAttackTime = 1;
 const defaultDecayLevel = 0.5;
 const defaultDecayTime = 1;
 const defaultReleaseLevel = 0.0;
-const defaultReleaseTime = 3;
+const defaultReleaseTime = 6;
 
 class ADSR {
     constructor(knobCollection, isSensorUnused) {
