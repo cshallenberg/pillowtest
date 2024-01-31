@@ -10,7 +10,7 @@ const step = 0.1;
 const defaultAttackLevel = 0.7;
 const defaultAttackTime = 1;
 const defaultDecayLevel = 0.5;
-const defaultDecayTime = 2;
+const defaultDecayTime = 7;
 const defaultReleaseLevel = 0.0;
 const defaultReleaseTime = 9;
 
