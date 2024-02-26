@@ -7,14 +7,14 @@
 
 // List of all the filenames for the sensor lines. 
 const sounds = {
-    1: 'cicada mix.mp3',
+    1: 'cicadamix.mp3',
     2: 'newdrum.mp3',
-    3: 'children playing.mp3',
+    3: 'childrenplaying.mp3',
     4: 'pianoshortloop.mp3',
-    5: 'melodic daytime short.mp3',
+    5: 'melodicdaytimeshort.mp3',
     6: 'slowfootsteps.mp3',
     7: 'singlelowpianonote.mp3',
-    8: 'forest .mp3',
+    8: 'forest.mp3',
     9: 'rainthunder.mp3', 
     10: 'shimmershort.mp3',
     11: 'waves.mp3',
