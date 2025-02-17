@@ -14,7 +14,7 @@ const sounds = {
     5: '05_immortal drone.mp3',
     6: '06_immortal geiger.mp3',
     7: '07_immortal church bells.mp3',
-    8: '08_immortal twinkel guitar.mp3',
+    8: '08_immortal twinkle guitar.mp3',
     9: '09_immortal wind.mp3', 
     10: '10_immortal underwater.mp3',
     11: '11_immortal low beeps.mp3',
